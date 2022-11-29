@@ -1,0 +1,23 @@
+#flex-container-elerhetoseg{
+    display: flex;
+    margin-top: 20px;
+    /*border: 1px solid green;*/
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 150px;
+    /*border: 2px solid rebeccapurple;*/
+}
+.elerhetosegitem {
+    /*border: 1px solid green;*/
+    display: flex;
+}
+.elerhetosegitem-text{
+    padding-left:20px;
+}
+.elerhetosegitem-text p {
+    font-size: large;
+    font-weight: lighter;
+}

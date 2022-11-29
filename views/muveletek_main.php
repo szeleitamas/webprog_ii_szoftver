@@ -1,2 +1,1 @@
-<h2>Műveletek</h2>
-
+<h1>Műveletek</h1>

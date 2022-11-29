@@ -1,5 +1,4 @@
-<h2>
-    <br>Üdvözöljük az új rendszerünkben!<br>
-    <br>Jó munkát kívánunk a rendszerünkkel!<br>
-    <br>Kezdhet ...<br>
-</h2>
+<h2>Üdvözöljük Szoftver leltár katalógus programunkban!</h2><br><br>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illo molestias, nam nemo neque rem rerum tempora tempore tenetur voluptas. Ab animi at, cumque doloremque ea facere nulla perferendis ratione repellendus temporibus. Adipisci debitis esse excepturi, fuga illum incidunt ipsam labore maiores nulla obcaecati placeat qui quidem, quo ratione vitae.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorem eaque enim ex inventore nulla quas. Ab aliquid amet, atque beatae delectus dignissimos doloribus ducimus eaque eius, eligendi enim laudantium libero magnam nemo nihil nostrum obcaecati officia optio perferendis praesentium quam, repellendus reprehenderit repudiandae sit soluta suscipit tempore totam. Facilis?
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, itaque, nostrum. Ab asperiores assumenda corporis cumque dolorem eius, eveniet expedita magnam molestias, nostrum numquam quidem quisquam reiciendis similique vel velit, voluptate. Animi autem dignissimos doloribus ea enim est fuga modi nam, nemo nostrum, officiis omnis quod saepe tempore temporibus voluptatibus.</p>

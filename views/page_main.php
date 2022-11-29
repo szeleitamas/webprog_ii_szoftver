@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
     <head>
         <meta charset="utf-8">
-        <title>Webprog II. ZH-2</title>
+        <title>MVC - PHP</title>
         <link rel="stylesheet" type="text/css" href="<?php echo SITE_ROOT?>css/main_style.css">
         <?php if($viewData['style']) echo '<link rel="stylesheet" type="text/css" href="'.$viewData['style'].'">'; ?>
     </head>
-    <body>
+    <body class="wrapper">
         <header>
-            <div id="user"><em><?= $_SESSION['userlastname']." ".$_SESSION['userfirstname'] ?></em></div>
-            <h1 class="header">Webprog II. ZH-2</h1>
+						<div class="session-bar">
+            <?= $_SESSION['userlastname']." ".$_SESSION['userfirstname'] ?>
+						</div>
+						<div class="banner">
+								<img src="./img/banner_cr.png" alt="Banner">
+								<p>Szoftver leltár katalógus</p>
+						</div>
         </header>
         <nav>
             <?php echo Menu::getMenu($viewData['selectedItems']); ?>
         </nav>
-        <aside>
-                <p>Phasellus wisi nulla...</p>
-        </aside>
         <section>
             <?php if($viewData['render']) include($viewData['render']); ?>
         </section>
-        <footer>&copy; Teszt Szoftver Kft. <?= date("Y") ?></footer>
+        <footer>&copy; Szoftver Leltár program <?= date("Y") ?></footer>
     </body>
 </html>

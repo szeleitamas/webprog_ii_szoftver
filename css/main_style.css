@@ -1,46 +1,69 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: "Whitney SSm A", "Whitney SSm B", "Lucida Grande", SansSerif, serif;
+    margin: 0;
+    border: 1px solid darkgrey;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 75rem;
+}
+.session-bar {
+    color: #FFFFFF;
+    text-align: end;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.banner p {
+    margin: 0;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
 header, footer {
-    padding: 0.5em; 
+    padding: 10px 0px;
     color: white;
-    background-color: gray;
+    background-color: #1b2b5e;
     clear: left;
 }
-h1.header {
-    padding: 0;
-    margin: 0;
-}
+
 div#user {
     float: right;
 }
-aside {
-    float: left;
-    width: 160px;
-    margin: 0;
-    padding: 1em;
-}
+
 section {
-    margin-left: 190px;
+    margin: auto;
     border-left: 1px solid gray;
     padding: 1em;
 }
 ul {
     float:left;
-    width:100%; /* A menü az alatta levő szövegtől elválik, birtokolja a teljes vízszintes sávját. */
+    width:100%;
     padding:0;
     margin:0;
     list-style-type:none;
-    background-color: lightblue;
+    background-color: lightcyan;
 }        
 a {
     float:left;
-    width:6em; /* Fix szélességű gombok érhetők el. Érdemes azonban vigyázni ezzel a módszerrel, mert ha a szöveg nem fér ki, a dizájn szétesik. */
-    text-decoration:none; /* Ne legyen aláhúzva a link. */
+    width:6em;
+    text-decoration:none;
     color:white;
-    background-color:navy;
+    background-color:#1b2b5e;
     padding:0.2em 0.6em;
     border-right:1px solid white;
 }
 a.selected{
-    background-color: blue;
+    background-color: deeppink;
 }
-a:hover { background-color:#ff3300} /* Az egérkurzorra színváltással reagál a menüpont. */
-li { display:inline } /* Ez a sor oldja meg, hogy a menüpontok egymás mellé kerüljenek. */
+a:hover {
+    background-color: lightgrey;
+}
+li {
+    display:inline
+}
