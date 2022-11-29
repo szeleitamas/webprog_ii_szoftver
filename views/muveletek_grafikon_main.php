@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
 <?php
 try {
 
@@ -31,9 +32,9 @@ foreach($sth as $data)
 }
 
 ?>
-
+<h1>Grafikon</h1>
 <div style="width: 500px;">
-    <canvas id="myChart"></canvas>
+		<canvas id="myChart"></canvas>
 </div>
 
 <script>

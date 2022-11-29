@@ -1,3 +1,7 @@
+h1{
+    padding-top: 30px;
+}
+
 #grafikon{
     display: flex;
     justify-content: center;
