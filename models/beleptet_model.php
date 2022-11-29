@@ -37,5 +37,3 @@ class Beleptet_Model
 		return $retData;
 	}
 }
-
-?>
