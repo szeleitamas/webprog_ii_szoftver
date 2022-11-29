@@ -55,10 +55,10 @@ $tabla = curl_exec($ch);
 curl_close($ch);
 ?>
 
-
 <?= $result ?>
 <h1>Számítógépek:</h1>
 <?= $tabla ?>
+		<div id="flexbox-rest-urlap">
 <br>
 <fieldset>
     <legend>Adatok felvitele / törlése</legend>

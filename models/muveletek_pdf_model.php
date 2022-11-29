@@ -9,7 +9,7 @@ class Muveletek_Pdf_Model
             array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
             $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
-            $sql = "SELECT hely, tipus FROM gep";
+            $sql = "SELECT id, hely, tipus FROM gep";
             $sth = $dbh->query($sql);
             $rows = $sth->fetchAll(PDO::FETCH_ASSOC);
         }
@@ -49,11 +49,11 @@ class Muveletek_Pdf_Model
 		<style>
 			table {border-collapse: collapse;}
 			th {font-weight: border: 1px solid red; text-align: center;}
-			td {border: 1px solid blue;}
+			td {border: 1px solid grey;}
 		</style>
 	</head>
 	<body>
-		<h1 style="text-align: center; color: blue;">Sámítógépek listája</h1>
+		<h1 style="text-align: center; color: black;">Sámítógépek listája</h1>
 		<table>
 			<tr style="background-color: red; color: white;">
 			<th style="width: 5%;">&nbsp;<br>&nbsp;<br>&nbsp;</th>

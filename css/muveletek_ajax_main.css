@@ -30,3 +30,6 @@ select{
 h1{
     padding-top: 30px;
 }
+#banner-img {
+    display: none;
+}

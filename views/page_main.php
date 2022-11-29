@@ -12,7 +12,9 @@
             <?= $_SESSION['userlastname']." ".$_SESSION['userfirstname'] ?>
 						</div>
 						<div class="banner">
+								<div id="banner-img">
 								<img src="./img/banner_cr.png" alt="Banner">
+								</div>
 								<p>Szoftver leltár katalógus</p>
 						</div>
         </header>
