@@ -59,7 +59,7 @@ a {
     border-right:1px solid white;
 }
 a.selected{
-    background-color: deeppink;
+    background-color: rgb(230, 17, 131);
 }
 a:hover {
     background-color: lightgrey;
