@@ -24,7 +24,7 @@
 								<img src="./img/telefon_icon.png" alt="telefon">
 						</div>
 						<div class="elerhetosegitem-text">
-								<p>06-76-111-111</p>
+								<p>06-76-123-456</p>
 						</div>
 				</div>
 		</div>
