@@ -2,7 +2,7 @@
 
 $eredmeny = "";
 try {
-	$dbh = new PDO('mysql:host=localhost;dbname=szoftver', 'root', '',
+	$dbh = new PDO('mysql:host=localhost;dbname=szeleihu_szoftver', 'szeleihu_szoftver', 'pY67ZdFQNQnZ',
 				  array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 	$dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 	switch($_SERVER['REQUEST_METHOD']) {

@@ -1,11 +1,12 @@
 function kategoriak() {
   $.post(
-      "/models/muveletek_ajax_model.php",
+      url = "http://lzuec6.szelei.hu/Ajax/ajax.php",
     { op: "kategoria" },
     function (data) {
       $("<option>").val("0").text("Válasszon ...").appendTo("#kategoriaselect");
       var lista = data.lista;
       for (i = 0; i < lista.length; i++)
+        //$("#orszagselect").append('<option value="'+lista[i].id+'">'+lista[i].nev+'</option>');
         $("<option>")
           .val(lista[i].id)
           .text(lista[i].kategoria)
@@ -22,7 +23,7 @@ function nevek() {
   var kategoriaid = $("#kategoriaselect").val();
   if (kategoriaid != 0) {
     $.post(
-        "./models/muveletek_ajax_model.php",
+        url = "http://lzuec6.szelei.hu/Ajax/ajax.php",
       { op: "nev", id: kategoriaid },
       function (data) {
         $("<option>").val("0").text("Válasszon ...").appendTo("#nevselect");
@@ -44,7 +45,7 @@ function verziok() {
   var nevid = $("#nevselect").val();
   if (nevid != 0) {
     $.post(
-        "./models/muveletek_ajax_model.php",
+        url = "http://lzuec6.szelei.hu/Ajax/ajax.php",
       { op: "verzio", id: nevid },
       function (data) {
         $("<option>").val("0").text("Válasszon ...").appendTo("#verzioselect");
@@ -66,7 +67,7 @@ function helyek() {
   var verzioid = $("#verzioselect").val();
   if (verzioid != 0) {
     $.post(
-        "./models/muveletek_ajax_model.php",
+        url = "http://lzuec6.szelei.hu/Ajax/ajax.php",
       { op: "hely", id: verzioid },
       function (data) {
         $("<option>").val("0").text("Válasszon ...").appendTo("#helyselect");
@@ -87,7 +88,7 @@ function hely() {
   var helyid = $("#helyselect").val();
   if (helyid != 0) {
     $.post(
-        "./models/muveletek_ajax_model.php",
+        url = "http://lzuec6.szelei.hu/Ajax/ajax.php",
       { op: "info", id: helyid },
       function (data) {
         $("#ipcim").text(data.ipcim);

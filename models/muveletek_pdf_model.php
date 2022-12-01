@@ -5,7 +5,7 @@ class Muveletek_Pdf_Model
 {
     public function pdf_data() {
         try {
-            $dbh = new PDO('mysql:host=localhost;dbname=szoftver', 'root', '',
+            $dbh = new PDO('mysql:host=localhost;dbname=szeleihu_szoftver', 'szeleihu_szoftver', 'pY67ZdFQNQnZ',
             array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
             $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
@@ -48,7 +48,7 @@ class Muveletek_Pdf_Model
 	<head>
 		<style>
 			table {border-collapse: collapse;}
-			th {font-weight: border: 1px solid red; text-align: center;}
+			th {font-weight: border: 1px solid lightblue; text-align: center;}
 			td {border: 1px solid grey;}
 		</style>
 	</head>

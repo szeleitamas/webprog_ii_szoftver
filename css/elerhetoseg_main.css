@@ -3,21 +3,20 @@
     margin-top: 20px;
     /*border: 1px solid green;*/
 }
-.text {
+#text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 150px;
+    padding-left: 300px;
     /*border: 2px solid rebeccapurple;*/
 }
 .elerhetosegitem {
     /*border: 1px solid green;*/
     display: flex;
 }
-.elerhetosegitem-text{
-    padding-left:20px;
+.elerhetosegitem-logo img {
+    width: 40px;
 }
-.elerhetosegitem-text p {
-    font-size: large;
-    font-weight: lighter;
+.elerhetosegitem-text{
+    padding-left: 20px;
 }

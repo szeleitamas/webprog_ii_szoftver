@@ -1,6 +1,6 @@
 <?php
 
-class Muveletek_Ajax_Model
+class Muveletek_Ajax_Model 
 {
     public function get_data()
     {
@@ -8,7 +8,7 @@ class Muveletek_Ajax_Model
             case 'kategoria':
                 $eredmeny = array("lista" => array());
                 try {
-                    $dbh = new PDO('mysql:host=localhost;dbname=szoftver', 'root', '',
+                    $dbh = new PDO('mysql:host=localhost;dbname=szeleihu_szoftver', 'szeleihu_szoftver', 'pY67ZdFQNQnZ',
                         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
                     $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
                     $stmt = $dbh->query("select id, kategoria from szoftver");
@@ -23,7 +23,7 @@ class Muveletek_Ajax_Model
             case 'nev':
                 $eredmeny = array("lista" => array());
                 try {
-                    $dbh = new PDO('mysql:host=localhost;dbname=szoftver', 'root', '',
+                    $dbh = new PDO('mysql:host=localhost;dbname=szeleihu_szoftver', 'szeleihu_szoftver', 'pY67ZdFQNQnZ',
                         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
                     $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
                     $stmt = $dbh->prepare("select id, nev from szoftver where id = :id");
@@ -39,7 +39,7 @@ class Muveletek_Ajax_Model
             case 'verzio':
                 $eredmeny = array("lista" => array());
                 try {
-                    $dbh = new PDO('mysql:host=localhost;dbname=szoftver', 'root', '',
+                    $dbh = new PDO('mysql:host=localhost;dbname=szeleihu_szoftver', 'szeleihu_szoftver', 'pY67ZdFQNQnZ',
                         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
                     $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
                     $stmt = $dbh->prepare("select id, verzio from telepites where szoftverid = :id");
@@ -55,7 +55,7 @@ class Muveletek_Ajax_Model
             case 'hely':
                 $eredmeny = array("lista" => array());
                 try {
-                    $dbh = new PDO('mysql:host=localhost;dbname=szoftver', 'root', '',
+                    $dbh = new PDO('mysql:host=localhost;dbname=szeleihu_szoftver', 'szeleihu_szoftver', 'pY67ZdFQNQnZ',
                         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
                     $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
                     $stmt = $dbh->prepare("select id, hely from gep where id = :id");
@@ -71,7 +71,7 @@ class Muveletek_Ajax_Model
             case 'info':
                 $eredmeny = array("tipus" => "", "ipcim" => "");
                 try {
-                    $dbh = new PDO('mysql:host=localhost;dbname=szoftver', 'root', '',
+                    $dbh = new PDO('mysql:host=localhost;dbname=szeleihu_szoftver', 'szeleihu_szoftver', 'pY67ZdFQNQnZ',
                         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
                     $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
                     $stmt = $dbh->prepare("select ipcim, tipus from gep where id = :id");

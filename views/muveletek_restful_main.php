@@ -1,5 +1,5 @@
 <?php
-$url = "http://localhost/rest/szerver.php";
+$url = "http://lzuec6.szelei.hu/rest/szerver.php";
 $result = "";
 if(isset($_POST['id']))
 {
@@ -77,7 +77,7 @@ curl_close($ch);
     <form method="post">
         <h4>Adat módosításához adja meg az Id-t</h4>
         Id: <input type="text" name="id"><br><br>
-        <h4>Adja meg a módosítandó adatot</h4>
+        <h4>Adat meg a módosítandó adatot</h4>
         Hely: <input type="text" name="hely" maxlength="45"><br><br>
         Típus: <input type="text" name="tip" maxlength="45"><br><br>
         IP cím: <input type="text" name="ip" maxlength="12"><br><br>
